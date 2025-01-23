@@ -11,8 +11,7 @@ The project structure is as follows:
 ```plaintext
 ├── data_process/          # Scripts for data preprocessing
 ├── model_parameters/      # Trained model parameter files
-├── pt/                    # Additional model-related files (if applicable)
-├── README.md              # Data files
+├── pt/                    # Data files
 ├── environment.txt        # Dependency list (generated via pip)
 ├── environment.yml        # Dependency list (generated via Conda)
 ├── model.py               # Model definition script
