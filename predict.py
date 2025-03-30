@@ -15,10 +15,8 @@ def predict():
                               msa_file_path='data_process/data/apo_msa_result',
                               em_file_path='data_process/data/apo_em', asa_file_path="data_process/data/apo_asa",
                               top_k=8, label_file_path="data_process/label/label_Tapo.pkl", mode="apo_test")
-    test9_dataset = TestDataset(root=f'./pt/test9_pt', pdb_file_path='data_process/data/test9_pdb', fasta_file_path="data_process/data/test9_fastas", msa_file_path='data_process/data/test9_ag', em_file_path='data_process/data/test9_em', asa_file_path ="data_process/data/test9_asa", label_file_path="data_process/label/test9_label.pkl", top_k=8)
     test_18_dataset = Test18Dataset(f'./pt/kop8')
     test18_loder = DataLoader(test_18_dataset, batch_size=18)
-    test9_loader = DataLoader(test9_dataset, batch_size=9)
     apo_loader = DataLoader(apo_dataset, batch_size=8)
     test_c_1 = TestDataset("./pt/conformational_pt/0","_","_","_","_","_","_","_","_")
     test_c_2 = TestDataset("./pt/conformational_pt/1", "_", "_", "_", "_","_","_","_","_")
@@ -40,18 +38,6 @@ def predict():
         mcc_value = matthews_corrcoef(data.y, binary_predictions)
         roc = roc_auc_score(data.y, output.detach().numpy())
     print(f'Test18: Accuracy: {accuracy:.4f}, Precision: {precision:.4f}, Recall: {recall:.4f}, F1 Score: {f1:.4f}, MCC: {mcc_value:.4f}, ROC AUC: {roc:.4f}')
-
-    for data in test9_loader:
-        output = model(data)
-        threshold = 0.424
-        binary_predictions = (output.detach().numpy() > threshold).astype(int)
-        accuracy = accuracy_score(data.y, binary_predictions)
-        precision = precision_score(data.y, binary_predictions)
-        recall = recall_score(data.y, binary_predictions)
-        f1 = f1_score(data.y, binary_predictions)
-        mcc_value = matthews_corrcoef(data.y, binary_predictions)
-        roc = roc_auc_score(data.y, output.detach().numpy())
-        print(f'Test9: Accuracy: {accuracy:.4f}, Precision: {precision:.4f}, Recall: {recall:.4f}, F1 Score: {f1:.4f}, MCC: {mcc_value:.4f}, ROC AUC: {roc:.4f}')
 
     for data in apo_loader:
         output = model(data)
