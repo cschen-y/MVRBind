@@ -17,7 +17,7 @@
 
 These advancements position MVRBind as a powerful tool for **RNA-targeted drug discovery**, significantly enhancing the accuracy and reliability of binding site predictions. 🚀
 
-![MVRBind Framework](docs/images/mvrbind_framework.png)
+![MVRBind Framework](mvrbind_framework.png)
 
 ---
 
