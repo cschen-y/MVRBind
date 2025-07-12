@@ -38,58 +38,40 @@ The project is organized as follows:
 │   ├── images/            # Directory for storing images
 ```
 
-当然可以！你可以将两个标题都保留，一个作为总标题，一个作为子标题，结构清晰又专业。下面是更新后的版本，包含：
-
 ---
 
 ## ⚙️ Installation Guide
 
-### 🧭 Step-by-Step Setup
+### 🔹 Installation with Conda
 
----
+1️⃣ Clone this repository:
 
-### 🪟 For **Windows**
+   ```bash
+   git clone https://github.com/cschen-y/MVRBind
+   cd MVRBind
+   ```
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/cschen-y/MVRBind
-cd MVRBind
+2️⃣ Create a Conda environment and install dependencies:
 
-# 2. Install the environment (choose one method)
+   ```bash
+   conda env create -f environment.yml
+   conda activate mvrbind
+   ```
 
-# ▶ Method A: Run the setup script
-call setup_windows.bat
+### 🔹 Installation with pip
 
-# ▶ Method B: Manual setup via environment.yml
-conda env create -f environment.yml
-conda activate mvrbind
+1️⃣ Clone this repository:
 
-# 3. Verify installation
-python -c "import torch; import torch_geometric; print('✔ PyTorch:', torch.__version__, '| CUDA:', torch.version.cuda)"
-```
+   ```bash
+   git clone https://github.com/cschen-y/MVRBind
+   cd MVRBind
+   ```
 
----
+2️⃣ Install dependencies:
 
-### 🐧 For **Linux**
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/cschen-y/MVRBind
-cd MVRBind
-
-# 2. Install the environment (choose one method)
-
-# ▶ Method A: Run the setup script
-chmod +x setup_linux.sh
-./setup_linux.sh
-
-# ▶ Method B: Manual setup via environment.yml
-conda env create -f environment.yml
-conda activate mvrbind
-
-# 3. Verify installation
-python -c "import torch; import torch_geometric; print('✔ PyTorch:', torch.__version__, '| CUDA:', torch.version.cuda)"
-```
+   ```bash
+   pip install -r environment.txt
+   ```
 
 ---
 
