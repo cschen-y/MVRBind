@@ -29,51 +29,71 @@ The project is organized as follows:
 ├── data_process/          # Scripts for data preprocessing
 ├── model_parameters/      # Trained model parameter files
 ├── pt/                    # Data files
-├── environment.txt        # Dependency list (generated via pip)
-├── environment.yml        # Dependency list (generated via Conda)
 ├── model.py               # Model definition script
 ├── predict.py             # Prediction script
 ├── train.py               # Model training script
-├── docs/
-│   ├── images/            # Directory for storing images
+├── environment.yml        # Dependency list
+├── setup_windows.bat      # Batch script for setting up dependencies on Windows
+├── setup_linux.bat        # Batch script for setting up dependencies on Linux
 ```
 
 ---
 
 ## ⚙️ Installation Guide
 
-### 🔹 Installation with Conda
+### 🧭 Step-by-Step Setup
 
-1️⃣ Clone this repository:
-
-   ```bash
-   git clone https://github.com/cschen-y/MVRBind
-   cd MVRBind
-   ```
-
-2️⃣ Create a Conda environment and install dependencies:
-
-   ```bash
-   conda env create -f environment.yml
-   conda activate mvrbind
-   ```
-
-### 🔹 Installation with pip
-
-1️⃣ Clone this repository:
-
-   ```bash
-   git clone https://github.com/cschen-y/MVRBind
-   cd MVRBind
-   ```
-
-2️⃣ Install dependencies:
-
-   ```bash
-   pip install -r environment.txt
-   ```
+> ✅ Choose **only ONE** of the following three installation methods based on your system or preference.
 
 ---
+
+### 🪟 Method 1: Windows (via `setup_windows.bat`)
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/cschen-y/MVRBind
+cd MVRBind
+
+# 2. Run the setup script
+setup_windows.bat
+
+# 3. Activate environment
+conda activate MVRBind
+```
+
+---
+
+### 🐧 Method 2: Linux (via `setup_linux.sh`)
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/cschen-y/MVRBind
+cd MVRBind
+
+# 2. Make script executable and run
+chmod +x setup_linux.sh
+./setup_linux.sh
+
+# 3. Activate environment
+conda activate MVRBind
+```
+
+---
+
+### 🔧 Method 3: Install via `environment.yml`
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/cschen-y/MVRBind
+cd MVRBind
+
+# 2. Create and activate environment
+conda env create -f environment.yml
+conda activate MVRBind
+```
+
+---
+
 
 ## 🚀 Usage
 
