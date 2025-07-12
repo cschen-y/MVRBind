@@ -29,51 +29,57 @@ The project is organized as follows:
 ├── data_process/          # Scripts for data preprocessing
 ├── model_parameters/      # Trained model parameter files
 ├── pt/                    # Data files
-├── environment.txt        # Dependency list (generated via pip)
-├── environment.yml        # Dependency list (generated via Conda)
 ├── model.py               # Model definition script
 ├── predict.py             # Prediction script
 ├── train.py               # Model training script
-├── docs/
-│   ├── images/            # Directory for storing images
+├── environment.yml        # Dependency list
+```
+
+
+---
+
+## ⚙️ Step-by-Step Setup
+
+---
+
+### 🪟 For **Windows**
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/cschen-y/MVRBind
+cd MVRBind
+
+# 2. Install the environment (choose one method)
+
+# ▶ Method A: Run the setup script
+setup_windows.bat
+
+# ▶ Method B: Manual setup via environment.yml
+conda env create -f environment.yml
+conda activate mvrbind
 ```
 
 ---
 
-## ⚙️ Installation Guide
+### 🐧 For **Linux**
 
-### 🔹 Installation with Conda
+```bash
+# 1. Clone the repository
+git clone https://github.com/cschen-y/MVRBind
+cd MVRBind
 
-1️⃣ Clone this repository:
+# 2. Install the environment (choose one method)
 
-   ```bash
-   git clone https://github.com/cschen-y/MVRBind
-   cd MVRBind
-   ```
+# ▶ Method A: Run the setup script
+bash setup_linux.sh
 
-2️⃣ Create a Conda environment and install dependencies:
-
-   ```bash
-   conda env create -f environment.yml
-   conda activate mvrbind
-   ```
-
-### 🔹 Installation with pip
-
-1️⃣ Clone this repository:
-
-   ```bash
-   git clone https://github.com/cschen-y/MVRBind
-   cd MVRBind
-   ```
-
-2️⃣ Install dependencies:
-
-   ```bash
-   pip install -r environment.txt
-   ```
+# ▶ Method B: Manual setup via environment.yml
+conda env create -f environment.yml
+conda activate mvrbind
+```
 
 ---
+
 
 ## 🚀 Usage
 
