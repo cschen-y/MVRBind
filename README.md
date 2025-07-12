@@ -58,7 +58,7 @@ cd MVRBind
 # 2. Install the environment (choose one method)
 
 # ▶ Method A: Run the setup script
-setup_windows.bat
+call setup_windows.bat
 
 # ▶ Method B: Manual setup via environment.yml
 conda env create -f environment.yml
@@ -80,7 +80,8 @@ cd MVRBind
 # 2. Install the environment (choose one method)
 
 # ▶ Method A: Run the setup script
-bash setup_linux.sh
+chmod +x setup_linux.sh
+./setup_linux.sh
 
 # ▶ Method B: Manual setup via environment.yml
 conda env create -f environment.yml
