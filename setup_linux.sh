@@ -23,4 +23,4 @@ pip install pillow -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 echo ">>> Verify Installation:"
-python -c "import torch; import torch_geometric; print('PyTorch:', torch.__version__, '| CUDA:', torch.version.cuda, '| PyG PyG Successfully installed!')"
+python -c "import torch; import torch_geometric; print('PyTorch:', torch.__version__, '| CUDA:', torch.version.cuda, '| PyG Successfully installed!')"
