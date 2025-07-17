@@ -107,11 +107,37 @@ python train.py
 
 📝 Trained model parameters will be saved in the `model_parameters/` directory.
 
+#### 📊 示例训练日志输出：
+
+```
+Epoch 1: LR = 0.001000, Train Loss = 0.7680, Val Loss = 0.6856, MCC = 0.0000
+Epoch 2: LR = 0.001000, Train Loss = 0.7389, Val Loss = 0.6848, MCC = 0.0000
+Epoch 3: LR = 0.001000, Train Loss = 0.7048, Val Loss = 0.6848, MCC = 0.0000
+Epoch 4: LR = 0.001000, Train Loss = 0.6944, Val Loss = 0.6826, MCC = 0.0000
+Epoch 5: LR = 0.001000, Train Loss = 0.6737, Val Loss = 0.6753, MCC = 0.0000
+Epoch 6: LR = 0.001000, Train Loss = 0.6467, Val Loss = 0.6698, MCC = 0.0389
+Epoch 7: LR = 0.001000, Train Loss = 0.6451, Val Loss = 0.6640, MCC = 0.0410
+Epoch 8: LR = 0.001000, Train Loss = 0.6300, Val Loss = 0.6581, MCC = 0.0544
+Epoch 9: LR = 0.001000, Train Loss = 0.6153, Val Loss = 0.6525, MCC = 0.0224
+```
+
 ### 🎯 Model Prediction
 
 Use the trained model to make predictions:
 
 ```bash
 python predict.py
+```
+
+#### ✅ 示例测试输出：
+
+```
+Test18 inference time: 0.0683s, Avg/sample: 0.000112s  
+Test18: Accuracy: 0.7131  
+        Precision: 0.6509  
+        Recall: 0.3333  
+        F1 Score: 0.4409  
+        MCC: 0.3018  
+        ROC AUC: 0.7559
 ```
 
