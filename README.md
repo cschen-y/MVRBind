@@ -34,7 +34,7 @@ The project is organized as follows:
 ├── train.py               # Model training script
 ├── environment.yml        # Dependency list
 ├── setup_windows.bat      # Batch script for setting up dependencies on Windows
-├── setup_linux.bat        # Batch script for setting up dependencies on Linux
+├── setup_linux.sh         # Batch script for setting up dependencies on Linux
 ```
 
 ---
