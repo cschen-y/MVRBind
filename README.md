@@ -30,7 +30,7 @@
 ├── pt/                      # Data files
 ├── model.py                 # Model definition
 ├── predict.py               # Prediction script
-├── predict_binding_site.py  # Predict on your own dataset
+├── predict_binding_site.py  # Predict on your PDB
 ├── train.py                 # Training script
 ├── environment.yml          # Conda environment
 ├── setup_windows.bat        # Setup for Windows
