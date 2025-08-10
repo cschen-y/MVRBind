@@ -115,8 +115,8 @@ python  ./msa_score.py \
 
 > 🔹 `--clustalw`: The path to the ClustalW executable
 > 🔹 `--fasta`: Input folder with `.fasta` files
-> 🔹 `--msa_out`: Saves intermediate `.aln` alignments
-> 🔹 `--aligned_out`: Saves conservation score outputs
+> 🔹 `--msa_out`: Folder that saves BLASTn search results
+> 🔹 `--aligned_out`: Folder that saves ClustalW multiple sequence alignment results
 
 ---
 
