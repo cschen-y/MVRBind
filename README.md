@@ -190,7 +190,7 @@ python predict_binding_site.py \
 * `--root`: Path to the folder where data will be saved
 * `--pdb`: Folder containing cleaned `.pdb` structures (from Step 1)
 * `--fasta`: Folder containing `.fasta` sequences (from Step 1)
-* `--msa`: Folder with MSA alignment + conservation score outputs (from Step 2)
+* `--msa`: Folder with MSA alignment outputs (from Step 2)
 * `--em`: Folder with RNABERT embedding files (from Step 4.1)
 * `--asa`: Folder with RNAsnap2 SASA files (from Step 4.2)
 
