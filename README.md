@@ -143,7 +143,7 @@ data_process/data/secondary_structure/2JUKA/
 
 * Repo: [https://github.com/mana438/RNABERT](https://github.com/mana438/RNABERT)
 * Generate embeddings from RNA sequences
-* Output file:
+* Place the generated result file in the following directory:
 
 ```
 data_process/data/em/2JUKA_output.txt
@@ -157,7 +157,7 @@ data_process/data/em/2JUKA_output.txt
 
 * Repo: [https://github.com/jaswindersingh2/RNAsnap2](https://github.com/jaswindersingh2/RNAsnap2)
 * Compute solvent accessible surface area (SASA)
-* Output file:
+* Place the generated result file in the following directory:
 
 ```
 data_process/data/em/2JUKA.rnasnap2_single
