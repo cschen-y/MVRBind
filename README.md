@@ -127,8 +127,8 @@ python  ./msa_score.py \
 * Submit and wait for results
 * After job finishes:
 
-  1. **Download all output files**
-  2. **Unzip the package**
+  1. Select all the results and download
+  2. Unzip the package
   3. Move to:
 
 ```
