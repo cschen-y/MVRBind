@@ -142,7 +142,7 @@ data_process/data/secondary_structure/2JUKA/
 #### 4.1 RNABERT Embeddings
 
 * Repo: [https://github.com/mana438/RNABERT](https://github.com/mana438/RNABERT)
-* Generate embeddings from RNA sequences/structures
+* Generate embeddings from RNA sequences
 * Output file:
 
 ```
@@ -208,10 +208,9 @@ predict binding sites: [0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0,
 
 * The **sequence** `GGCCUUCCCACAAGGGAAGGCC` is the RNA chain in FASTA format.
 * The list `predict binding sites` contains binary values:
-
   * `1` indicates that the corresponding nucleotide is predicted to be a **ligand binding site**.
   * `0` means it is **not** predicted to be a binding site.
-* The prediction is position-wise and aligns exactly with the input RNA sequence.
+* Here, ">2JUKA" is the header where "2JUK" refers to the PDB ID of the RNA structure, and "A" indicates chain A of this structure. The RNA sequence follows, and the list of 0s and 1s corresponds one-to-one to each residue in the sequence. In this list, 1 indicates the residue is predicted to be a binding site, while 0 means it is predicted to be a non-binding residue. For example, the fifth residue "U" in the sequence corresponds to the fifth value "1" in the list, meaning this residue is predicted to participate in binding.
 
 ---
 
